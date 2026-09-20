@@ -1,2 +1,55 @@
-# qh-sound-
-QH VisionX Response – A smart, secure and offline-capable emergency response platform for real-time mapping, GPS location, incident management and field coordination.
+بله. برای شما یک آزمایشگاه آموزشی واقعی Wi-Fi Security می‌سازیم، ولی فقط برای شبکه‌ای که خودتان مالک آن هستید.
+
+مشخصات آزمایشگاه
+
+نام شبکه:       QH-WIFI-LAB
+نوع امنیت:      WPA2-PSK
+باند:           2.4 GHz
+کانال:          1
+WPS:            Disabled برای حالت امن
+سیستم تست:      Kali Linux
+هدف:            یادگیری و ارزیابی امنیت
+
+مرحله ۱ — آماده‌سازی روتر
+
+در تنظیمات روتر خودتان:
+
+Wireless/Wi-Fi
+       ↓
+SSID: QH-WIFI-LAB
+
+Security:
+WPA2-Personal / WPA2-PSK
+
+Encryption:
+AES / CCMP
+
+Password:
+یک رمز آزمایشی که خودتان تعیین می‌کنید
+
+برای شروع بهتر است WPS را خاموش بگذارید؛ بعداً در یک درس جداگانه علت آن را بررسی می‌کنیم.
+
+مرحله ۲ — آماده‌سازی Kali
+
+Kali را باز کنید و فقط این دو دستور را اجرا کنید:
+
+iw dev
+
+سپس:
+
+ip link
+
+خروجی هر دو دستور را برای من بفرستید.
+
+از روی آن مشخص می‌کنم:
+
+نام کارت Wi-Fi شما چیست
+
+آیا Kali کارت را شناسایی کرده
+
+رابط Wi-Fi فعال است یا نه
+
+آیا برای آزمایشگاه آماده است یا نیاز به تنظیم درایور دارد
+
+
+بعد از این مرحله می‌رویم سراغ درس ۳: شناسایی شبکه آزمایشگاهی، مشاهده SSID/BSSID/Channel/Encryption و ساخت اولین گزارش امنیتی واقعی.
